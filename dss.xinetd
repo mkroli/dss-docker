@@ -1,0 +1,9 @@
+service http-alt
+{
+	socket_type = stream
+	wait = no
+	user = nobody
+	group = nogroup
+	redirect = 127.0.0.1 5380
+	bind = 0.0.0.0
+}
