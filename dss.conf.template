@@ -1,0 +1,15 @@
+server {
+	fallback {
+		address = $server_fallback_address
+	}
+	autoindex = $server_autoindex
+}
+
+index.include {
+	host = $index_include_host
+	domain = $index_include_domain
+}
+
+http {
+	interface = "0.0.0.0"
+}
